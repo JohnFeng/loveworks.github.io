@@ -27,6 +27,9 @@ fieldset {
   background-image: url(../img/main_legend_bg.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
+  width: 90%;
+  max-width: 200px;
+  text-align: center;
 }
 legend {
   color: #777;
