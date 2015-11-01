@@ -1,0 +1,60 @@
+body {
+  background-color: #fff;
+  font-family: -apple-system-font, "Droid Sans", helvetica, sans-serif;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+form * {
+  font-size: 1.5rem;
+}
+fieldset {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #999;
+}
+legend {
+  color: #777;
+  font-size: 1.2em;
+}
+legend span a img{
+  width: 80pt;
+  height: auto;
+  padding: 1pt;
+}
+.field {
+  display: block;
+  margin-bottom: 1em;
+}
+input[type="text"], input[type="password"] {
+  padding: .3em .5em;
+  border: 1px solid #999;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #999;
+}
+button {
+  padding: .3em 1em;
+  border: 1px solid crimson;
+  background: crimson;
+  color: #fff;
+  border: 1px solid #999;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #999;
+}
+.field-error {
+  color: crimson;
+  margin-top: .5em;
+  font-size: .5em;
+}
+.field-error.is-hidden {
+  display: none;
+}
