@@ -1,16 +1,19 @@
 body {
   background-color: #fff;
+  background-image: url(../img/abstract-8.jpg);
+  background-repeat: repeat-y;
+  background-size: 320%;
   font-family: -apple-system-font, "Droid Sans", helvetica, sans-serif;
+  width: 80%;
   clear: both;
 }
 * {
   box-sizing: border-box;
 }
 form {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 40%;
+  margin-left: 4%;
 }
 form * {
   font-size: 1.5rem;
@@ -21,15 +24,21 @@ fieldset {
   padding: 1.5rem 2.5rem;
   border-radius: 8px;
   box-shadow: 0 0 10px #999;
+  background-image: url(../img/main_legend_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 legend {
   color: #777;
   font-size: 1.2em;
 }
 legend span a img{
-  width: 80pt;
-  height: auto;
   padding: 1pt;
+  height: 58px;
+}
+legend span{
+  line-height: 50px;
+  text-align: center;
 }
 .field {
   display: block;
@@ -40,6 +49,7 @@ input[type="text"], input[type="password"] {
   border: 1px solid #999;
   border-radius: 8px;
   box-shadow: 0 0 10px #999;
+  opacity: 0.7;
 }
 button {
   padding: .3em 1em;
