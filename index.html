@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="http://s.doubanio.com/dae/cdnlib/libs/jquery/1.11.2/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-  <title>登录豆瓣</title>
+  <script src="./javascripts/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <title>LoveWorks</title>
 </head>
 
 <body>
@@ -17,18 +17,18 @@
           <a class="tooltipIcon" href="http://www.douban.com">
             <img src="http://img3.douban.com/f/shire/8977fa054324c4c7f565447b003ebf75e9b4f9c6/pics/nav/lg_main@2x.png" />
           </a>
-          登录
+          Find You
         </span>
       </legend>
       <label class="field field__username">
-        <input type="text" name="username" placeholder="邮箱/手机号" />
-        <div class="field-error is-hidden">出错啦！</div>
+        <input type="text" name="username" placeholder="Email/PhoneNumber" />
+        <div class="field-error is-hidden">Something Wrong...</div>
       </label>
       <label class="field field__password">
-        <input type="password" name="password" placeholder="密码" />
-        <div class="field-error is-hidden">出错啦！</div>
+        <input type="password" name="password" placeholder="Password" />
+        <div class="field-error is-hidden">Something Wrong...</div>
       </label>
-      <button type="submit">登录</button>
+      <button type="submit">Find</button>
     </fieldset>
   </form>
 </body>
@@ -66,14 +66,14 @@
 
 
   var stringRequiredValidationRule = new ValidationRule({
-    description: '*必填',
+    description: '*must',
     test: function(string) {
       return string.length > 0
     }
   })
 
   var phoneNumberRequiredValidationRule = new ValidationRule({
-    description: '*请填写有效的国内手机号码或邮箱哦',
+    description: '*please provide us valid phone number',
     test: function(string) {
       var regex = /^[a-zA-z]\w{3,15}$/;
       if (regex.test(string)) {
@@ -85,7 +85,7 @@
   })
 
   var passwordLengthRequiredValidationRule = new ValidationRule({
-    description: '*密码长度不得小于8位哦',
+    description: '*password should longer than 8',
     test: function(string) {
       return string.length > 8
     }
